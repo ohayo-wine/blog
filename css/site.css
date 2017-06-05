@@ -1673,36 +1673,37 @@ dl.rating dd:after{
 }
 
 /* レート画像定義 */
-dl.rating dd.rate00  {background-image: url("img/rating_00.png");}
-dl.rating dd.rate00p {background-image: url("img/rating_00.png");}
-dl.rating dd.rate05m {background-image: url("img/rating_05.png");}
-dl.rating dd.rate05  {background-image: url("img/rating_05.png");}
-dl.rating dd.rate05p {background-image: url("img/rating_05.png");}
-dl.rating dd.rate10m {background-image: url("img/rating_10.png");}
-dl.rating dd.rate10  {background-image: url("img/rating_10.png");}
-dl.rating dd.rate10p {background-image: url("img/rating_10.png");}
-dl.rating dd.rate15m {background-image: url("img/rating_15.png");}
-dl.rating dd.rate15  {background-image: url("img/rating_15.png");}
-dl.rating dd.rate15p {background-image: url("img/rating_15.png");}
-dl.rating dd.rate20m {background-image: url("img/rating_20.png");}
-dl.rating dd.rate20  {background-image: url("img/rating_20.png");}
-dl.rating dd.rate20p {background-image: url("img/rating_20.png");}
-dl.rating dd.rate25m {background-image: url("img/rating_25.png");}
-dl.rating dd.rate25  {background-image: url("img/rating_25.png");}
-dl.rating dd.rate25p {background-image: url("img/rating_25.png");}
-dl.rating dd.rate30m {background-image: url("img/rating_30.png");}
-dl.rating dd.rate30  {background-image: url("img/rating_30.png");}
-dl.rating dd.rate30p {background-image: url("img/rating_30.png");}
-dl.rating dd.rate35m {background-image: url("img/rating_35.png");}
-dl.rating dd.rate35  {background-image: url("img/rating_35.png");}
-dl.rating dd.rate35p {background-image: url("img/rating_35.png");}
-dl.rating dd.rate40m {background-image: url("img/rating_40.png");}
-dl.rating dd.rate40  {background-image: url("img/rating_40.png");}
-dl.rating dd.rate40p {background-image: url("img/rating_40.png");}
-dl.rating dd.rate45m {background-image: url("img/rating_45.png");}
-dl.rating dd.rate45  {background-image: url("img/rating_45.png");}
-dl.rating dd.rate45p {background-image: url("img/rating_45.png");}
-dl.rating dd.rate50  {background-image: url("img/rating_50.png");}
+dl.rating dd.rate00  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_00.png");}
+dl.rating dd.rate00p {background-image: url("https://ohayo-wine.github.io/blog/image/rating_00.png");}
+dl.rating dd.rate05m {background-image: url("https://ohayo-wine.github.io/blog/image/rating_05.png");}
+dl.rating dd.rate05  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_05.png");}
+dl.rating dd.rate05p {background-image: url("https://ohayo-wine.github.io/blog/image/rating_05.png");}
+dl.rating dd.rate10m {background-image: url("https://ohayo-wine.github.io/blog/image/rating_10.png");}
+dl.rating dd.rate10  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_10.png");}
+dl.rating dd.rate10p {background-image: url("https://ohayo-wine.github.io/blog/image/rating_10.png");}
+dl.rating dd.rate15m {background-image: url("https://ohayo-wine.github.io/blog/image/rating_15.png");}
+dl.rating dd.rate15  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_15.png");}
+dl.rating dd.rate15p {background-image: url("https://ohayo-wine.github.io/blog/image/rating_15.png");}
+dl.rating dd.rate20m {background-image: url("https://ohayo-wine.github.io/blog/image/rating_20.png");}
+dl.rating dd.rate20  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_20.png");}
+dl.rating dd.rate20p {background-image: url("https://ohayo-wine.github.io/blog/image/rating_20.png");}
+dl.rating dd.rate25m {background-image: url("https://ohayo-wine.github.io/blog/image/rating_25.png");}
+dl.rating dd.rate25  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_25.png");}
+dl.rating dd.rate25p {background-image: url("https://ohayo-wine.github.io/blog/image/rating_25.png");}
+dl.rating dd.rate30m {background-image: url("https://ohayo-wine.github.io/blog/image/rating_30.png");}
+dl.rating dd.rate30  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_30.png");}
+dl.rating dd.rate30p {background-image: url("https://ohayo-wine.github.io/blog/image/rating_30.png");}
+dl.rating dd.rate35m {background-image: url("https://ohayo-wine.github.io/blog/image/rating_35.png");}
+dl.rating dd.rate35  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_35.png");}
+dl.rating dd.rate35p {background-image: url("https://ohayo-wine.github.io/blog/image/rating_35.png");}
+dl.rating dd.rate40m {background-image: url("https://ohayo-wine.github.io/blog/image/rating_40.png");}
+dl.rating dd.rate40  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_40.png");}
+dl.rating dd.rate40p {background-image: url("https://ohayo-wine.github.io/blog/image/rating_40.png");}
+dl.rating dd.rate45m {background-image: url("https://ohayo-wine.github.io/blog/image/rating_45.png");}
+dl.rating dd.rate45  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_45.png");}
+dl.rating dd.rate45p {background-image: url("https://ohayo-wine.github.io/blog/image/rating_45.png");}
+dl.rating dd.rate50  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_50.png");}
+
 
 /* 引用スタイル */
 figure.quote {
