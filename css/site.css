@@ -690,11 +690,28 @@ img.alignnone {
 /* =Site Header
 ----------------------------------------------- */
 
+.titlewrapper{
+	position: absolute;
+	top: 60px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	display: block;
+	width: 300px;
+	height: auto;
+	
+/*
+	position: fixed;
+	z-index: 1;
+*/
+}
+
 .site-headerbwrap {
-/*	background: #72565c url("//ohayo-wine.github.io/blog/image/header_bg.png");*/
-	background: #72565c;
+	background: #72565c url("https://ohayo-wine.github.io/blog/image/header_bg.jpg");
+/*	background: #72565c;*/
 /*	background-size:cover;*/
-	background-position:center center;
+	background-position:center top;
 	background-attachment:fixed;
 }
 
@@ -709,6 +726,7 @@ img.alignnone {
 }
 
 .site-title {
+/*
 	color: #fff;
 	font-family: Lato, sans-serif;
 	font-size: 40px;
@@ -720,30 +738,48 @@ img.alignnone {
 	padding: 40px 0 5px;
 	padding: 4rem 0 0.5rem;
 	text-transform: uppercase;
+*/
+	
+	padding: 0;
+	margin: 0 auto;
+	width: 300px;
+	height: 160px;
+
+	position: relative;
+	left: 0;
+	right: 0;
 }
 
 .site-title a {
-	color: #fff;
-	
+	color: rgba(255, 255, 255, 0);
+	font-size: 22px;
+	font-family: cursive;
+	font-weight: normal;
+	text-align: center;
+	letter-spacing: 0.5em;
+	background: url("https://ohayo-wine.github.io/blog/image/header_logo.png") center center no-repeat;
+	padding: 120px 0 0 0;
+
+	display: block;
+	width: 300px;
+	height: 160px;
+	box-sizing: border-box;
+
+	position: absolute;
+	top: 0;
+
 	/* hide text */
+/*
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
+*/
 }
 
 .site-description {
-	color: #666;
-	font: normal 14px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-	letter-spacing: 2px;
-	margin: 0;
-	padding-bottom: 23px;
-	padding-bottom: 2.3rem;
-}
-
-.site-description {
-	color: #666;
-	font: normal 14px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-	letter-spacing: 2px;
+	color: rgba(255, 255, 255, 0.6);
+	font: normal 12px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	letter-spacing: 1px;
 	margin: 0;
 	padding-bottom: 23px;
 	padding-bottom: 2.3rem;
