@@ -691,9 +691,9 @@ img.alignnone {
 ----------------------------------------------- */
 
 .site-headerbwrap {
-	background-color: #000;
-	background: url("https://1.bp.blogspot.com/-yLM6LK6qPig/WTDHmzfKwGI/AAAAAAAAMb8/pdKUyD8avdsHmXbaDQ3gDn_So6tw5T0ZgCLcB/s0/header_image.png") top center;
-	background-size:cover;
+/*	background: #72565c url("//ohayo-wine.github.io/blog/image/header_bg.png");*/
+	background: #72565c;
+/*	background-size:cover;*/
 	background-position:center center;
 	background-attachment:fixed;
 }
@@ -711,8 +711,8 @@ img.alignnone {
 .site-title {
 	color: #fff;
 	font-family: Lato, sans-serif;
-	font-size: 80px;
-	font-size: 8rem;
+	font-size: 40px;
+	font-size: 4rem;
 	font-weight: 300;
 	letter-spacing: 5px;
 	line-height: 1;
@@ -724,6 +724,11 @@ img.alignnone {
 
 .site-title a {
 	color: #fff;
+	
+	/* hide text */
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .site-description {
@@ -1540,6 +1545,12 @@ main {
 }
 
 /* Customized --------------------------- */
+.hide-text{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
 .article-wine img, 
 .article-event img
 {
