@@ -699,7 +699,7 @@ img.alignnone {
 	margin: 0 auto;
 	display: block;
 	width: 300px;
-	height: auto;
+	height: 200px;
 	
 /*
 	position: fixed;
@@ -1700,7 +1700,7 @@ dl.rating dd {
 
 	display: block;
 
-	text-align: right;
+	text-align: left;
 	margin: 0 0 0 5.75em;
 	padding: 0 0 0 146px;
 	background-position: left center;
@@ -1711,6 +1711,7 @@ dl.rating dd {
 	line-height: 36px;
 	font-family: Verdana;
 /*	font-weight: bold;*/
+	box-sizing: content-box;
 }
 
 dl.rating dd:after{
@@ -1801,7 +1802,7 @@ blockquote:before{
 }
 
 blockquote:after{
-    bottom: -20px;
+    bottom: -26px;
     right: 26px;
     content: "”";
 }
