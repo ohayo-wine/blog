@@ -1814,3 +1814,46 @@ blockquote p {
     z-index: 3;
     line-height: 1.7;
 }
+
+.post-share-buttons li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.share-button {
+    padding: 0 0 0 30px;
+    text-align: center;
+    font-family: "Century Gothic";
+    font-size: 1.6rem;
+    font-size: 16px;
+    border: 2px solid;
+    border-style: none none solid none;
+    display: inline-block;
+    width: 186px;
+    height: 50px;
+    line-height: 50px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.share-button.sb-twitter {
+    background-image: url("https://ohayo-wine.github.io/blog/image/sns_icon_twitter.svg");
+    border-color: #008aff;
+}
+
+.share-button.sb-facebook {
+    background-image: url("https://ohayo-wine.github.io/blog/image/sns_icon_facebook.svg");
+    border-color: #3b5a9a;
+}
+
+.share-button.sb-googlep {
+    background-image: url("https://ohayo-wine.github.io/blog/image/sns_icon_googlep.svg");
+    border-color: #dc4e41;
+}
+
+.share-button.sb-feedly {
+    background-image: url("https://ohayo-wine.github.io/blog/image/sns_icon_feedly.svg");
+    border-color: #40ae64;
+}
