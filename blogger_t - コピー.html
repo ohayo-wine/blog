@@ -92,6 +92,7 @@ function createSummaryAndThumb(pID){
       <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
       <b:widget-setting name='displayWidth'>0</b:widget-setting>
     </b:widget-settings>
+
     <b:includable id='main'>
       <b:if cond='data:useImage'>
         <b:if cond='data:imagePlacement == &quot;REPLACE&quot;'>
@@ -151,6 +152,7 @@ function createSummaryAndThumb(pID){
       <b:widget-setting name='pageListJson'><![CDATA[{'home': {'href': 'https://ohayo-wine.blogspot.com/', 'title': 'ホーム', 'position': 0}}]]></b:widget-setting>
       <b:widget-setting name='homeTitle'>ホーム</b:widget-setting>
     </b:widget-settings>
+
     <b:includable id='main'>
       <b:if cond='data:title'><!--<h2><data:title/></h2>--></b:if>
       <div class='widget-content'>
@@ -166,6 +168,7 @@ function createSummaryAndThumb(pID){
         <b:include name='quickedit'/>
       </div>
     </b:includable>
+
   </b:widget>
 </b:section>
 </div>
@@ -210,6 +213,7 @@ function createSummaryAndThumb(pID){
       <b:widget-setting name='showInlineAds'>true</b:widget-setting>
       <b:widget-setting name='showReactions'>false</b:widget-setting>
     </b:widget-settings>
+
     <b:includable id='main' var='top'>
       <b:if cond='data:mobile == &quot;false&quot;'>
 
@@ -546,7 +550,7 @@ function createSummaryAndThumb(pID){
         </b:if>
       </b:if>
     </b:includable>
-    <b:includable id='mobile-index-post' var='post'>
+        <b:includable id='mobile-index-post' var='post'>
       <div class='mobile-date-outer date-outer'>
         <b:if cond='data:post.dateHeader'>
           <div class='date-header'>
@@ -591,7 +595,7 @@ function createSummaryAndThumb(pID){
         </div>
       </div>
     </b:includable>
-    <b:includable id='mobile-main' var='top'>
+        <b:includable id='mobile-main' var='top'>
         <!-- posts -->
         <div class='blog-posts hfeed'>
 
@@ -610,7 +614,7 @@ function createSummaryAndThumb(pID){
 
        <b:include name='mobile-nextprev'/>
     </b:includable>
-    <b:includable id='mobile-nextprev'>
+        <b:includable id='mobile-nextprev'>
       <div class='blog-pager' id='blog-pager'>
         <b:if cond='data:newerPageUrl'>
           <div class='mobile-link-button' id='blog-pager-newer-link'>
@@ -635,7 +639,7 @@ function createSummaryAndThumb(pID){
       </div>
       <div class='clear'/>
     </b:includable>
-    <b:includable id='mobile-post' var='post'>
+        <b:includable id='mobile-post' var='post'>
       <div class='date-outer'>
         <b:if cond='data:post.dateHeader'>
           <h2 class='date-header'><span><data:post.dateHeader/></span></h2>
@@ -740,7 +744,7 @@ function createSummaryAndThumb(pID){
         </div>
       </div>
     </b:includable>
-    <b:includable id='nextprev'>
+        <b:includable id='nextprev'>
       <div class='blog-pager' id='blog-pager'>
         <b:if cond='data:newerPageUrl'>
           <span id='blog-pager-newer-link'>
@@ -765,7 +769,7 @@ function createSummaryAndThumb(pID){
       </div>
       <div class='clear'/>
     </b:includable>
-    <b:includable id='post' var='post'>
+        <b:includable id='post' var='post'>
     <article class='post hentry'>
 
     <a expr:name='data:post.id'/>
@@ -848,26 +852,24 @@ function createSummaryAndThumb(pID){
     </b:includable>
     <b:includable id='shareButtons' var='post'>
       <ul>
-        <b:if cond='data:top.showEmailButton'><a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' expr:title='data:top.emailThisMsg' target='_blank'>
-          <li><span class='share-button-link-text'><data:top.emailThisMsg/></span></li></a>
+        <b:if cond='data:top.showTwitterButton'><a class='share-button sb-twitter' expr:href='data:post.sharePostUrl + &quot;&amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'>
+          <li>Twitter</li></a>
         </b:if>
-        <b:if cond='data:top.showBlogThisButton'><a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + &quot;&amp;target=blog&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' expr:title='data:top.blogThisMsg' target='_blank'>
-          <li><span class='share-button-link-text'><data:top.blogThisMsg/></span></li></a>
+        <b:if cond='data:top.showFacebookButton'><a class='share-button sb-facebook' expr:href='data:post.sharePostUrl + &quot;&amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'>
+          <li>Facebook</li></a>
         </b:if>
-        <b:if cond='data:top.showTwitterButton'><a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + &quot;&amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'>
-          <li><span class='share-button-link-text'><data:top.shareToTwitterMsg/></span></li></a>
-        </b:if>
-        <b:if cond='data:top.showFacebookButton'><a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + &quot;&amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'>
-          <li><span class='share-button-link-text'><data:top.shareToFacebookMsg/></span></li></a>
-        </b:if>
-        <b:if cond='data:top.showOrkutButton'><a class='goog-inline-block share-button sb-orkut' expr:href='data:post.sharePostUrl + &quot;&amp;target=orkut&quot;' expr:title='data:top.shareToOrkutMsg' target='_blank'>
-          <li><span class='share-button-link-text'><data:top.shareToOrkutMsg/></span></li></a>
-        </b:if>
+        <a class='share-button sb-gplus' expr:href='data:post.sharePostUrl + &quot;&amp;target=gplus&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='Google+で共有' target='_blank'>
+          <li>Google+</li>
+        </a>
+        <a class='share-button sb-feedly' expr:href='data:post.sharePostUrl + &quot;&amp;target=gplus&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='feedlyで購読' target='_blank'>
+          <li>Feedly</li>
+        </a>
         <b:if cond='data:top.showDummy'>
           <div class='goog-inline-block dummy-container'><data:post.dummyTag/></div>
         </b:if>
       </ul>
     </b:includable>
+
     <b:includable id='status-message'>
       <b:if cond='data:navMessage'>
       <div class='status-msg-wrap'>
@@ -1121,7 +1123,7 @@ function createSummaryAndThumb(pID){
         </div>
       </div>
     </b:includable>
-  </b:widget>
+</b:widget>
 </b:section>
 </div><!-- #content -->
 </div><!-- #primary -->
@@ -1130,7 +1132,7 @@ function createSummaryAndThumb(pID){
 <div class='widget-areabwrap'>
 
 <b:section class='bsidebarright' id='bsidebarright' preferred='yes'>
-  <b:widget id='HTML1' locked='false' title='' type='HTML' version='1'>
+  <b:widget id='HTML1' locked='false' title='' type='HTML'>
     <b:includable id='main'>
       <!-- only display title if it's non-empty -->
       <b:if cond='data:title != &quot;&quot;'>
@@ -1250,7 +1252,7 @@ function createSummaryAndThumb(pID){
   </b:widget>
   <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='showStyle'>HIERARCHY</b:widget-setting>
+      <b:widget-setting name='showStyle'>FLAT</b:widget-setting>
       <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
       <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
       <b:widget-setting name='monthPattern'>MMMM yyyy</b:widget-setting>
@@ -1342,7 +1344,7 @@ function createSummaryAndThumb(pID){
      </b:if>
     </b:includable>
   </b:widget>
-  <b:widget id='HTML2' locked='false' title='' type='HTML' version='1'>
+  <b:widget id='HTML2' locked='false' title='' type='HTML'>
     <b:includable id='main'>
       <!-- only display title if it's non-empty -->
       <b:if cond='data:title != &quot;&quot;'>
@@ -1355,7 +1357,7 @@ function createSummaryAndThumb(pID){
       <b:include name='quickedit'/>
     </b:includable>
   </b:widget>
-  <b:widget id='AdSense1' locked='false' title='' type='AdSense' version='1'>
+  <b:widget id='AdSense1' locked='false' title='' type='AdSense'>
     <b:includable id='main'>
       <div class='widget-content'>
         <data:adCode/>
@@ -1363,7 +1365,7 @@ function createSummaryAndThumb(pID){
       </div>
     </b:includable>
   </b:widget>
-  <b:widget id='AdSense2' locked='false' title='' type='AdSense' version='1'>
+  <b:widget id='AdSense2' locked='false' title='' type='AdSense'>
     <b:includable id='main'>
       <div class='widget-content'>
         <data:adCode/>
@@ -1371,7 +1373,40 @@ function createSummaryAndThumb(pID){
       </div>
     </b:includable>
   </b:widget>
-  <b:widget cond='!data:view.isPost' id='PageList1' locked='false' title='ページ' type='PageList' version='1'>
+  <b:widget id='FollowByEmail1' locked='false' title='Follow by Email' type='FollowByEmail'>
+    <b:includable id='main'>
+      <b:if cond='data:title != &quot;&quot;'><h2 class='title'><data:title/></h2></b:if>
+      <div class='widget-content'>
+        <div class='follow-by-email-inner'>
+          <form action='https://feedburner.google.com/fb/a/mailverify' expr:onsubmit='&quot;window.open(\&quot;https://feedburner.google.com/fb/a/mailverify?uri=&quot; + data:feedPath + &quot;\&quot;, \&quot;popupwindow\&quot;, \&quot;scrollbars=yes,width=550,height=520\&quot;); return true&quot;' method='post' target='popupwindow'>
+            <table width='100%'>
+              <tr>
+                <td>
+                  <input class='follow-by-email-address' name='email' placeholder='Email address...' type='text'/>
+                </td>
+                <td width='64px'>
+                  <input class='follow-by-email-submit' type='submit' value='Submit'/>
+                </td>
+              </tr>
+            </table>
+            <input expr:value='data:feedPath' name='uri' type='hidden'/>
+            <input name='loc' type='hidden' value='en_US'/>
+          </form>
+        </div>
+      </div>
+      <span class='item-control blog-admin'>
+        <b:include name='quickedit'/>
+      </span>
+    </b:includable>
+  </b:widget>
+<!--
+  <b:widget id='ReportAbuse1' locked='false' title='' type='ReportAbuse'>
+    <b:includable id='main'>
+      <b:include name='reportAbuse'/>
+    </b:includable>
+  </b:widget>
+-->
+  <b:widget cond='!data:view.isPost' id='PageList1' locked='false' title='ページ' type='PageList'>
     <b:widget-settings>
       <b:widget-setting name='pageListJson'><![CDATA[{'home': {'href': 'https://ohayo-wine.blogspot.com/', 'title': 'ホーム', 'position': 0}}]]></b:widget-setting>
       <b:widget-setting name='homeTitle'>ホーム</b:widget-setting>
@@ -1403,7 +1438,7 @@ function createSummaryAndThumb(pID){
       </div>
     </b:includable>
   </b:widget>
-  <b:widget cond='data:view.isHomepage' id='FeaturedPost1' locked='false' title='' type='FeaturedPost' version='1'>
+  <b:widget cond='data:view.isHomepage' id='FeaturedPost1' locked='false' title='' type='FeaturedPost'>
     <b:widget-settings>
       <b:widget-setting name='showSnippet'>true</b:widget-setting>
       <b:widget-setting name='showPostTitle'>true</b:widget-setting>
@@ -1453,29 +1488,45 @@ function createSummaryAndThumb(pID){
 <div class='sidebar-inner'>
 
 <div class='widget-areabwrap'>
-<b:section class='footersec' id='footersec1' showaddelement='yes'>
-    <b:widget id='HTML3' locked='false' title='About' type='HTML'>
-        <b:widget-settings>
-            <b:widget-setting name='content' />
-        </b:widget-settings>
+  <b:section class='footersec' id='footersec1' showaddelement='yes'>
+    <b:widget id='HTML5' locked='false' title='BTemplates.com' type='HTML'>
+      <b:widget-settings>
+        <b:widget-setting name='content'/>
+      </b:widget-settings>
+      <b:includable id='main'>
+        <!-- only display title if it's non-empty -->
+        <b:if cond='data:title != &quot;&quot;'>
+          <h2 class='title'><data:title/></h2>
+        </b:if>
+        <div class='widget-content'>
+          <data:content/>
+        </div>
 
-        <b:includable id='main'>
-            <!-- only display title if it's non-empty -->
-            <b:if cond='data:title != &quot;&quot;'>
-                <h2 class='title'><data:title/></h2>
-            </b:if>
-            <div class='widget-content'>
-                <data:content/>
-            </div>
-
-            <b:include name='quickedit' />
-        </b:includable>
+        <b:include name='quickedit'/>
+      </b:includable>
     </b:widget>
-</b:section>
+  </b:section>
 </div>
 
 <div class='widget-areabwrap'>
-  <b:section class='footersec' id='footersec2' showaddelement='yes'/>
+  <b:section class='footersec' id='footersec2' showaddelement='yes'>
+    <b:widget id='HTML4' locked='false' title='Blogroll' type='HTML'>
+      <b:widget-settings>
+        <b:widget-setting name='content'/>
+      </b:widget-settings>
+      <b:includable id='main'>
+        <!-- only display title if it's non-empty -->
+        <b:if cond='data:title != &quot;&quot;'>
+          <h2 class='title'><data:title/></h2>
+        </b:if>
+        <div class='widget-content'>
+          <data:content/>
+        </div>
+
+        <b:include name='quickedit'/>
+      </b:includable>
+    </b:widget>
+  </b:section>
 </div>
 
 </div><!-- .sidebar-inner -->
@@ -1487,7 +1538,6 @@ function createSummaryAndThumb(pID){
     Copyright &#169; <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> <a expr:href='data:blog.homepageUrl'><data:blog.title/></a> | Powered by <a href='http://www.blogger.com/'>Blogger</a><br/>Design by <a href='http://www.themeweaver.net/' target='_blank'>Theme Weaver</a> | Blogger Theme by <a href='http://www.bloggertipandtrick.net/' target='_blank' title='Blogging Tutorials'>Lasantha</a> - <a href='http://www.premiumbloggertemplates.com/' target='_blank' title='Free Blogger Templates'>PremiumBloggerTemplates.com</a>
   </div><!-- .site-info -->
 </div><!-- .site-info-container -->
-
 </footer><!-- #colophon -->
 
 </div><!-- #page -->
