@@ -1756,7 +1756,8 @@ dl.rating dd.rate50  {background-image: url("https://ohayo-wine.github.io/blog/i
 /* 引用スタイル */
 figure.quote {
     background: #f7f7f7;
-	padding: 0;
+	padding: 4px 8px 8px 8px;
+    margin: 0 40px;
 }
 
 figure.quote blockquote {
@@ -1777,7 +1778,7 @@ figure.quote figcaption {
 	margin: auto;
 /*	background: #ddd;*/
 	border: 1px dotted #aaa;
-	border-style: dotted none none none;
+	border-style: dashed none none none;
 }
 
 figure.quote figcaption a{
@@ -1815,14 +1816,20 @@ blockquote p {
     line-height: 1.7;
 }
 
-.post-share-buttons li {
+.post-share-buttons-customed {
+    text-align: center;
+    font-size: 0;
+}
+
+.post-share-buttons-customed ul, 
+.post-share-buttons-customed li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .share-button {
-    padding: 0 0 0 30px;
+    padding: 0 0 0 4px;
     text-align: center;
     font-family: "Century Gothic";
     font-size: 1.6rem;
@@ -1835,7 +1842,12 @@ blockquote p {
     line-height: 50px;
     background-position: left center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 30px;
+    margin: 0 0 0 20px;
+}
+
+.share-button:first-child {
+    margin: 0;
 }
 
 .share-button.sb-twitter {
@@ -1848,8 +1860,8 @@ blockquote p {
     border-color: #3b5a9a;
 }
 
-.share-button.sb-googlep {
-    background-image: url("https://ohayo-wine.github.io/blog/image/sns_icon_googlep.svg");
+.share-button.sb-gplus {
+    background-image: url("https://ohayo-wine.github.io/blog/image/sns_icon_gplus.svg");
     border-color: #dc4e41;
 }
 

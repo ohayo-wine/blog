@@ -75,7 +75,7 @@ function createSummaryAndThumb(pID){
 
 </head>
 
-<body class='three-footer-sidebars'>
+<body class='two-footer-sidebars'>
 <div class='sitebwrap'>
 
 <header class='site-headerbwrap' id='mastheadbwrap' role='banner'>
@@ -812,7 +812,7 @@ function createSummaryAndThumb(pID){
 
     <b:if cond='data:blog.pageType == &quot;item&quot;'>
       <div style='clear:both;'/>
-      <div class='post-share-buttons'>
+      <div class='post-share-buttons-customed'>
         <b:include data='post' name='shareButtons'/>
       </div>
       <span class='reaction-buttons'>
@@ -872,6 +872,7 @@ function createSummaryAndThumb(pID){
         </b:if>
       </ul>
     </b:includable>
+
     <b:includable id='status-message'>
       <b:if cond='data:navMessage'>
       <div class='status-msg-wrap'>
