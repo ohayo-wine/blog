@@ -192,8 +192,8 @@ mark {
 }
 
 p {
-    margin: 0 0 23px;
-    margin: 0 0 2.3rem;
+    margin: 0 0 18px;
+    margin: 0 0 1.8rem;
 }
 
 code,
@@ -1011,6 +1011,11 @@ com/-LlzPEhXk_0I/VuElHDTLzxI/AAAAAAAAAWc/dtyEdJMzigQ/s000/search-icon.png);
     font-size: 86%;
     line-height: 14px;
     text-indent: 0;
+    text-align: right;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 0 26px 0;
+    margin: 0 0 10px 0;
 }
 
 .entry-meta a {
