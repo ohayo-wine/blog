@@ -672,7 +672,7 @@ img.alignnone {
     float: left;
     margin: 0 10px;
     margin: 0 1rem;
-    width: 800px;
+    width: 760px;
 }
 
 .single-attachment .content-areabwrap,
@@ -1041,7 +1041,7 @@ com/-LlzPEhXk_0I/VuElHDTLzxI/AAAAAAAAAWc/dtyEdJMzigQ/s000/search-icon.png);
 /* =Entry Content
 ----------------------------------------------- */
 
-.entry-content a,
+/*.entry-content a,*/
 .comment-content a,
 .page-content a {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -1827,12 +1827,13 @@ blockquote p {
 }
 
 .post-share-buttons-customed {
-    text-align: center;
     font-size: 0;
 }
 
 .post-share-buttons-customed ul{
-    text-align: center;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: justify;
 }
 
 .post-share-buttons-customed ul, 
@@ -1845,10 +1846,21 @@ blockquote p {
 .post-share-buttons-customed li {
     color: #333;
     display: inline-block;
-    width: 186px;
-    height: 50px;
-    margin: 0 10px 0 10px;
+    width: 180px;
+    height: 46px;
+    text-align: center;
+/*    margin: 0 10px 0 10px;*/
 }
+
+/*
+.post-share-buttons-customed li:first-child {
+    margin: 0 10px 0 0;
+}
+
+.post-share-buttons-customed li:last-child {
+    margin: 0 0 0 10px;
+}
+*/
 
 .post-share-buttons-customed li a,
 .post-share-buttons-customed li a:visited {
@@ -1858,6 +1870,7 @@ blockquote p {
 .sharebtn {
     padding: 0 0 0 4px;
     text-align: center;
+    text-align-last: auto;
     font-family: "Century Gothic";
     font-size: 1.6rem;
     font-size: 16px;
@@ -1866,7 +1879,7 @@ blockquote p {
     display: block;
     width:  100%;
     height: 100%;
-    line-height: 50px;
+    line-height: 46px;
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 30px;
