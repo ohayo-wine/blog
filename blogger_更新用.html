@@ -825,9 +825,14 @@ function createSummaryAndThumb(pID){
     </div>
 
     <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
-    <footer class='entry-meta'>
-       <b:if cond='data:post.labels'>Posted in <b:loop values='data:post.labels' var='label'><a expr:href='data:label.url' rel='tag'><data:label.name/></a><b:if cond='data:label.isLast != &quot;true&quot;'>, </b:if></b:loop>&amp;nbsp;</b:if>on&amp;nbsp;<data:post.timestamp/>&amp;nbsp;by&amp;nbsp;<b:if cond='data:post.authorProfileUrl'><a expr:href='data:post.authorProfileUrl' rel='author' title='author profile'><data:post.author/></a><b:else/><data:post.author/></b:if>&amp;nbsp;|&amp;nbsp;<b:if cond='data:post.allowComments'><a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><b:if cond='data:post.numComments == 0'>Leave a comment</b:if><b:if cond='data:post.numComments == 1'>1 comment</b:if><b:if cond='data:post.numComments &gt;= 2'><data:post.numComments/> comments</b:if></a></b:if>&amp;nbsp;<b:include data='post' name='postQuickEdit'/>
-    </footer>
+      <footer class='entry-meta'>
+        <b:if cond='data:post.labels'>Posted in
+          <b:loop values='data:post.labels' var='label'>
+            <a expr:href='data:label.url' rel='tag'><data:label.name/></a>
+            <b:if cond='data:label.isLast != &quot;true&quot;'>, </b:if>
+          </b:loop>&amp;nbsp;
+        </b:if>on&amp;nbsp;<data:post.timestamp/>&amp;nbsp;by&amp;nbsp;<b:if cond='data:post.authorProfileUrl'><a class="author" expr:href='data:post.authorProfileUrl' rel='author' title='author profile'><data:post.author/></a><b:else/><data:post.author/></b:if>&amp;nbsp;|&amp;nbsp;<b:if cond='data:post.allowComments'><a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><b:if cond='data:post.numComments == 0'>Leave a comment</b:if><b:if cond='data:post.numComments == 1'>1 comment</b:if><b:if cond='data:post.numComments &gt;= 2'><data:post.numComments/> comments</b:if></a></b:if>&amp;nbsp;<b:include data='post' name='postQuickEdit'/>
+      </footer>
     </b:if>
 
     </article>

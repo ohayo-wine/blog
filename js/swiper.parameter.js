@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.slideshow', {
 	pagination: '.swiper-pagination',
 	paginationClickable: true,
 	parallax: true,
