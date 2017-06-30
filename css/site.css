@@ -1948,3 +1948,28 @@ blockquote p {
     width: 100%;
     text-align: left;
 }
+
+.footer-author {
+    text-indent: 0;
+}
+
+.footer-author .author-image {
+    background: #d67585;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin: 0 14px 0 0;
+    padding: 0;
+    float: left;
+    overflow: hidden;
+}
+
+.footer-author .author-image img {
+    width : 100%;
+    height: auto;
+}
+
+.footer-author .author-name {
+    font-size: 16px;
+    font-weight: normal;
+}
