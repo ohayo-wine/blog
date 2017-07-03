@@ -931,6 +931,7 @@ ul.nav-menuul li:hover > ul,
 
 .site-headerbwrap .search-field:focus {
     background-color: #f5f5f5;
+    background-image: url(../image/icon_search_hover.svg);
     border: 0;
     cursor: text;
     outline: 0;
