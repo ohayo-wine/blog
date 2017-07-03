@@ -1006,15 +1006,13 @@ com/-LlzPEhXk_0I/VuElHDTLzxI/AAAAAAAAAWc/dtyEdJMzigQ/s000/search-icon.png);
 .entry-meta {
     clear: both;
     color: rgba(0, 0, 0, 0.45);
-    margin: 10px 0 0 0;
+    margin: 10px 0 10px 0;
     text-transform: uppercase;
     font-size: 86%;
     line-height: 14px;
     text-indent: 0;
     text-align: right;
-
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0 0 26px 0;
+    padding: 16px 0 16px 0;
 }
 
 .entry-meta a {
@@ -1267,8 +1265,8 @@ com/-LlzPEhXk_0I/VuElHDTLzxI/AAAAAAAAAWc/dtyEdJMzigQ/s000/search-icon.png);
 
 .site-footerbwrap .sidebar-containerbwrap {
     background-color: rgba(0, 0, 0, 0.06);
-    padding: 46px 0 54px 0;
-    padding: 4.6rem 0 5.4rem 0;
+    padding: 46px 0 50px 0;
+    padding: 4.6rem 0 5.0rem 0;
 }
 
 .site-footerbwrap .sidebar-inner {
@@ -1832,6 +1830,8 @@ blockquote p {
 }
 
 .post-share-buttons-customed {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-style: solid none solid none;
     font-size: 0;
 }
 
@@ -1915,39 +1915,57 @@ blockquote p {
     border-color: #40ae64;
 }
 
-
+/* スライドショー（swiper） */
 .slideshow {
-    width: 600px;
+    margin: auto;
     text-align: center;
     border: 1px solid #f00;
     overflow: hidden;
-    text-align: center;
-    margin: auto;
+    position: relative;
+    height: auto;
+    width: auto;
+    font-size: 0;
 }
 
 .slideshow .swiper-wrapper{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .slideshow img{
-    width: 800px;
+    width: 100%;
+    height: auto;
 }
 
 .slideshow .swiper-slide{
+    margin: auto;
+    position: relative;
+    top:    0;
+    bottom: 0;
+    left:   0;
+    right:  0;
+
     display: inline-block;
     width: 100%;
 }
 
 .slideshow legend{
-    background: #eee;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
     display: block;
-    padding: 0 0 0 0.4em;
+    padding: 0 0 0 10px;
     text-indent: 0;
-    line-height: 2;
-    width: 100%;
     text-align: left;
+    font-size: 14px;
+    line-height: 2.4;
+    width: 100%;
+    position: relative;
+    top: -33px;
+    left: 0;
 }
 
+/* ページフッター 自己紹介部分 */
 .footer-author {
     text-indent: 0;
 }
@@ -1971,4 +1989,17 @@ blockquote p {
 .footer-author .author-name {
     font-size: 16px;
     font-weight: normal;
+}
+
+/* Read more */
+.morer {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    line-height: 1;
+    padding: 6px 10px;
+}
+
+.morer:hover {
+    border-color: #855a66;
+    background: #855a66;
+    color: #fff;
 }

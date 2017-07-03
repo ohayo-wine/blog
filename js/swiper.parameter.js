@@ -1,6 +1,9 @@
 var swiper = new Swiper('.slideshow', {
+    calculateHeight: true,
 	pagination: '.swiper-pagination',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
 	paginationClickable: true,
-	parallax: true,
-	speed: 600,
+	speed: 400,
+    effect: "slide",
 });
