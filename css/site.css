@@ -1006,7 +1006,6 @@ com/-LlzPEhXk_0I/VuElHDTLzxI/AAAAAAAAAWc/dtyEdJMzigQ/s000/search-icon.png);
 .entry-meta {
     clear: both;
     color: rgba(0, 0, 0, 0.45);
-    margin: 10px 0 10px 0;
     text-transform: uppercase;
     font-size: 86%;
     line-height: 14px;
@@ -1831,8 +1830,9 @@ blockquote p {
 
 .post-share-buttons-customed {
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-style: solid none solid none;
+    border-style: solid none none none;
     font-size: 0;
+    padding: 10px 0 0 0;
 }
 
 .post-share-buttons-customed ul{
