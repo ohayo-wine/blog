@@ -910,7 +910,7 @@ ul.nav-menuul li:hover > ul,
     background-image: url(../image/icon_search.svg);
     background-position: 10px center;
     background-repeat: no-repeat;
-    background-size: 24px 24px;
+    background-size: 18px 18px;
     border: 0;
     cursor: pointer;
     height: 36px;
@@ -931,7 +931,7 @@ ul.nav-menuul li:hover > ul,
 
 .site-headerbwrap .search-field:focus {
     background-color: #f5f5f5;
-    background-image: url(../image/icon_search_hover.svg);
+    background-image: url(../image/icon_search_active.svg);
     border: 0;
     cursor: text;
     outline: 0;
