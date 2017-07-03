@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr' lang="ja">
+<html expr:dir='data:blog.languageDirection' lang='ja' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
 <meta charset='UTF-8'/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<meta name='keywords' content='ワイン, レビュー, テイスティング'/>
+<meta content='width=device-width,initial-scale=1.0' name='viewport'/>
+<meta content='ワイン, レビュー, テイスティング' name='keywords'/>
 
 <b:include data='blog' name='all-head-content'/>
 <link href='//fonts.googleapis.com/css?family=Lato%3A300%2C400&amp;subset=latin%2Clatin-ext' media='all' rel='stylesheet' type='text/css'/>
@@ -20,7 +20,7 @@
 <b:skin><![CDATA[]]></b:skin>
 <link href='//ohayo-wine.github.io/blog/css/site.css' media='all' rel='stylesheet'/>
 
-<link rel="canonical" href="//ohayo-wine.blogspot.jp/" />
+<link href='//ohayo-wine.blogspot.jp/' rel='canonical'/>
 
 <script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' type='text/javascript'/>
 <script src='//ohayo-wine.github.io/blog/js/jquery-migrate-1.2.1.min.js' type='text/javascript'/>
@@ -800,8 +800,8 @@ function createSummaryAndThumb(pID){
 
     <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
       <b:if cond='data:blog.pageType != &quot;item&quot;'>
-        <div style='float:right;padding-right:10px;margin-top:10px;'>
-          <a class='morer' expr:href='data:post.url'>Read More</a>
+        <div class='morer'>
+          <a class='morer-text' expr:href='data:post.url'>Read More</a>
         </div>
       </b:if>
     </b:if>
@@ -813,7 +813,7 @@ function createSummaryAndThumb(pID){
             <a expr:href='data:label.url' rel='tag'><data:label.name/></a>
             <b:if cond='data:label.isLast != &quot;true&quot;'>, </b:if>
           </b:loop>&amp;nbsp;
-        </b:if>on&amp;nbsp;<data:post.timestamp/>&amp;nbsp;by&amp;nbsp;<b:if cond='data:post.authorProfileUrl'><a class="author" expr:href='data:post.authorProfileUrl' rel='author' title='author profile'><data:post.author/></a><b:else/><data:post.author/></b:if>&amp;nbsp;|&amp;nbsp;<b:if cond='data:post.allowComments'><a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><b:if cond='data:post.numComments == 0'>Leave a comment</b:if><b:if cond='data:post.numComments == 1'>1 comment</b:if><b:if cond='data:post.numComments &gt;= 2'><data:post.numComments/> comments</b:if></a></b:if>&amp;nbsp;<b:include data='post' name='postQuickEdit'/>
+        </b:if>on&amp;nbsp;<data:post.timestamp/>&amp;nbsp;by&amp;nbsp;<b:if cond='data:post.authorProfileUrl'><a class='author' expr:href='data:post.authorProfileUrl' rel='author' title='author profile'><data:post.author/></a><b:else/><data:post.author/></b:if>&amp;nbsp;|&amp;nbsp;<b:if cond='data:post.allowComments'><a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><b:if cond='data:post.numComments == 0'>Leave a comment</b:if><b:if cond='data:post.numComments == 1'>1 comment</b:if><b:if cond='data:post.numComments &gt;= 2'><data:post.numComments/> comments</b:if></a></b:if>&amp;nbsp;<b:include data='post' name='postQuickEdit'/>
       </footer>
     </b:if>
 
@@ -868,7 +868,7 @@ function createSummaryAndThumb(pID){
       <ul>
         <li><a class='sharebtn twitter' expr:href='data:post.sharePostUrl + &quot;&amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'>Twitter</a></li>
         <li><a class='sharebtn facebook' expr:href='data:post.sharePostUrl + &quot;&amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'>Facebook</a></li>
-        <li><a class='sharebtn gplus' expr:href='"https://plus.google.com/share?url=" + data:post.canonicalUrl' target="_blank" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;">Google+</a></li>
+        <li><a class='sharebtn gplus' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:post.canonicalUrl' onclick='javascript:window.open(this.href, &apos;&apos;, &apos;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600&apos;);return false;' target='_blank'>Google+</a></li>
         <li><a class='sharebtn feedly' href='http://cloud.feedly.com/#subscription%2Ffeed%2Fohayo-wine.blogspot.jp' target='_blank'>Feedly</a></li>
       </ul>
     </b:includable>
@@ -1150,8 +1150,8 @@ function createSummaryAndThumb(pID){
   <b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts' version='1'>
     <b:widget-settings>
       <b:widget-setting name='numItemsToShow'>3</b:widget-setting>
-      <b:widget-setting name='showThumbnails'>true</b:widget-setting>
-      <b:widget-setting name='showSnippets'>true</b:widget-setting>
+      <b:widget-setting name='showThumbnails'>false</b:widget-setting>
+      <b:widget-setting name='showSnippets'>false</b:widget-setting>
       <b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
@@ -1210,9 +1210,9 @@ function createSummaryAndThumb(pID){
     <b:widget-settings>
       <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
       <b:widget-setting name='display'>LIST</b:widget-setting>
-      <b:widget-setting name='selectedLabelsList'/>
-      <b:widget-setting name='showType'>ALL</b:widget-setting>
-      <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+      <b:widget-setting name='selectedLabelsList'>ワインレビュー,南アフリカ,白ワイン</b:widget-setting>
+      <b:widget-setting name='showType'>USER_SELECTED</b:widget-setting>
+      <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
       <b:if cond='data:title'>
@@ -1254,14 +1254,14 @@ function createSummaryAndThumb(pID){
   </b:widget>
   <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='showStyle'>HIERARCHY</b:widget-setting>
+      <b:widget-setting name='showStyle'>MENU</b:widget-setting>
       <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
       <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
       <b:widget-setting name='monthPattern'>MMMM yyyy</b:widget-setting>
       <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
       <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
       <b:widget-setting name='chronological'>false</b:widget-setting>
-      <b:widget-setting name='showPosts'>true</b:widget-setting>
+      <b:widget-setting name='showPosts'>false</b:widget-setting>
       <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
@@ -1458,11 +1458,14 @@ function createSummaryAndThumb(pID){
 
 <div class='widget-areabwrap'>
 <b:section class='footersec' id='footersec1' showaddelement='yes'>
-  <b:widget id='HTML3' locked='false' title='About' type='HTML'>
+  <b:widget id='HTML3' locked='false' title='Author' type='HTML' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='content' />
+      <b:widget-setting name='content'>&lt;dl class=&quot;footer-author&quot;&gt;
+    &lt;dt class=&quot;author-image&quot;&gt;&lt;img src=&quot;//ohayo-wine.github.io/blog/image/author.png&quot; /&gt;&lt;/dt&gt;
+    &lt;dt class=&quot;author-name&quot;&gt;ムゥ&lt;/dt&gt;
+    &lt;dd&gt;毎日ちびちびワイン飲んでます&#12290;好みはややナチュール寄り&#12290;南アフリカワインがお気に入り&#12290;&lt;/dd&gt;
+&lt;/dl&gt;</b:widget-setting>
     </b:widget-settings>
-
     <b:includable id='main'>
       <!-- only display title if it's non-empty -->
       <b:if cond='data:title != &quot;&quot;'>
@@ -1472,7 +1475,7 @@ function createSummaryAndThumb(pID){
         <data:content/>
       </div>
 
-      <b:include name='quickedit' />
+      <b:include name='quickedit'/>
     </b:includable>
   </b:widget>
 </b:section>

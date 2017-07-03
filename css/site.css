@@ -907,8 +907,7 @@ ul.nav-menuul li:hover > ul,
 
 .site-headerbwrap .search-field {
     background-color: transparent;
-    background-image: url(http://1.
-com/-LlzPEhXk_0I/VuElHDTLzxI/AAAAAAAAAWc/dtyEdJMzigQ/s000/search-icon.png);
+    background-image: url(../image/icon_search.svg);
     background-position: 10px center;
     background-repeat: no-repeat;
     background-size: 24px 24px;
@@ -1682,6 +1681,26 @@ main {
 
 }
 
+.review-text {
+    
+}
+
+.review-text p{
+    clear: both;
+}
+
+.review-text p img{
+    max-width: 300px;
+    max-height: 300px;
+    text-align: center;
+    display: inline;
+    margin: 0 10px 0 0;
+}
+
+.popup-image:hover {
+    opacity: 0.8;
+}
+
 dl.rating {
 /*	border: 1px solid #d9d9d9;*/
 
@@ -1989,16 +2008,23 @@ blockquote p {
 .footer-author .author-name {
     font-size: 16px;
     font-weight: normal;
+    margin: 0 0 4px 0;
 }
 
 /* Read more */
 .morer {
+    float:right;
+    padding-right: 6px;
+    margin: 1.5em 0 10px 0;
+}
+
+.morer-text {
     border: 1px solid rgba(0, 0, 0, 0.1);
     line-height: 1;
     padding: 6px 10px;
 }
 
-.morer:hover {
+.entry-content .morer-text:hover {
     border-color: #855a66;
     background: #855a66;
     color: #fff;
