@@ -761,6 +761,7 @@ img.alignnone {
     padding: 120px 0 0 40px;
 
     display: block;
+    width:  320px;
     height: 160px;
     box-sizing: border-box;
 
