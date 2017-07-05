@@ -1645,6 +1645,8 @@ main {
     line-height: 1.5;
     margin-bottom: 6px;
     color: #4d4d4d;
+    border: 1px dotted #ddd;
+    border-style: none none dotted none;
 }
 
 .review-data-detail{
@@ -1687,6 +1689,10 @@ main {
 
 .review-text {
     
+}
+
+.review-text p{
+    clear: both;
 }
 
 .review-text p{
@@ -1970,7 +1976,7 @@ blockquote p {
     width: 100%;
 }
 
-.slideshow legend{
+.slideshow small{
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
     display: block;
@@ -2029,4 +2035,9 @@ blockquote p {
     border-color: #855a66;
     background: #855a66;
     color: #fff;
+}
+
+dfn {
+    border: 1px dashed #000;
+    border-style: none none dashed none;
 }
