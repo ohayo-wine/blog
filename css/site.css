@@ -89,8 +89,8 @@ dl, dt, dd{
 
 body {
     color: #333;
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 13px;
+    font-size: 1.3rem;
     line-height: 20px;
     line-height: 1.6;
     margin: 0;
@@ -192,11 +192,6 @@ mark {
 
 p {
     margin: 0;
-    text-indent: 1em;
-}
-
-.lp {
-    margin-bottom: 2em;
 }
 
 code,
@@ -1605,6 +1600,16 @@ main {
     overflow: hidden;
 }
 
+section {
+    margin-bottom: 2em;
+}
+
+p{
+/*    text-indent: 1em;*/
+    margin: 0 0 0.7em 0;
+    line-height: 1.4;
+}
+
 .article-wine img, 
 .article-event img
 {
@@ -1619,6 +1624,7 @@ main {
     margin: 10px 0 0 0;
     display: block;
     width: 550px;
+    width: 55rem;
 }
 
 /* reset */
@@ -1955,35 +1961,34 @@ blockquote p {
 .slideshow {
     margin: auto;
     text-align: center;
-    border: 1px solid #f00;
     overflow: hidden;
     position: relative;
     height: auto;
-    width: auto;
+    width:  auto;
     font-size: 0;
+    
+    max-height: 600px;
+}
+
+h2 .slideshow {
 }
 
 .slideshow .swiper-wrapper{
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 600px;
 }
 
 .slideshow img{
+/*
     width: 100%;
     height: auto;
-}
-
-.slideshow .swiper-slide{
-    margin: auto;
-    position: relative;
-    top:    0;
-    bottom: 0;
-    left:   0;
-    right:  0;
-
+*/
+    height: 100%;
+    width : auto;
     display: inline-block;
-    width: 100%;
 }
 
 .slideshow small{
@@ -1996,9 +2001,7 @@ blockquote p {
     font-size: 14px;
     line-height: 2.4;
     width: 100%;
-    position: relative;
-    top: -33px;
-    left: 0;
+    z-index: 1000;
 }
 
 /* ページフッター 自己紹介部分 */
