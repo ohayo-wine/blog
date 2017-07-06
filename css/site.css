@@ -89,8 +89,8 @@ dl, dt, dd{
 
 body {
     color: #333;
-    font-size: 13px;
-    font-size: 1.3rem;
+    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 20px;
     line-height: 1.6;
     margin: 0;
@@ -191,9 +191,12 @@ mark {
 }
 
 p {
-    margin: 0 0 18px;
-    margin: 0 0 1.8rem;
+    margin: 0;
     text-indent: 1em;
+}
+
+.lp {
+    margin-bottom: 2em;
 }
 
 code,
@@ -708,7 +711,7 @@ img.alignnone {
 }
 
 .site-headerbwrap {
-    background: #72565c url("https://ohayo-wine.github.io/blog/image/header_bg.jpg");
+    background: #72565c url("//ohayo-wine.github.io/blog/image/header_bg.jpg");
 /*	background: #72565c;*/
 /*	background-size:cover;*/
     background-position:center top;
@@ -757,7 +760,7 @@ img.alignnone {
     font-weight: normal;
     text-align: center;
     letter-spacing: 0.6em;
-    background: url("https://ohayo-wine.github.io/blog/image/header_logo.png") center center no-repeat;
+    background: url("//ohayo-wine.github.io/blog/image/header_logo.png") center center no-repeat;
     padding: 120px 0 0 40px;
 
     display: block;
@@ -1022,7 +1025,7 @@ ul.nav-menuul li:hover > ul,
     color: rgba(0, 0, 0, 0.45);
     background: url("../image/icon_tag.svg") no-repeat;
     background-position : left 0 bottom 3px;
-/*    background-image: url("https://ohayo-wine.github.io/blog/image/icon_tag.svg");*/
+/*    background-image: url("../image/icon_tag.svg");*/
     padding: 0 2px 0 14px;
 }
 
@@ -1645,8 +1648,6 @@ main {
     line-height: 1.5;
     margin-bottom: 6px;
     color: #4d4d4d;
-    border: 1px dotted #ddd;
-    border-style: none none dotted none;
 }
 
 .review-data-detail{
@@ -1683,8 +1684,16 @@ main {
     clear: both;
 }
 
-.review-data-detail .link-ext{
+.review-data-detail small{
+    border: 1px dotted #ddd;
+    border-style: none none dashed none;
+}
 
+.review-data-detail .link-ext{
+    background: url("../image/icon_link_ext.svg") no-repeat;
+    background-position: right 0 bottom 2px;
+    background-size: 10px;
+    padding: 0 8px 0 0;
 }
 
 .review-text {
@@ -1716,7 +1725,8 @@ dl.rating {
 
     display: block;
     line-height: 3;
-    margin: 0;
+    margin: 4px 0 6px 0;
+    margin: 0.4em 0 0.6rem 0;
     width: 100%;
 }
 
@@ -1759,36 +1769,36 @@ dl.rating dd:after{
 }
 
 /* レート画像定義 */
-dl.rating dd.rate00  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_00.png");}
-dl.rating dd.rate00p {background-image: url("https://ohayo-wine.github.io/blog/image/rating_00.png");}
-dl.rating dd.rate05m {background-image: url("https://ohayo-wine.github.io/blog/image/rating_05.png");}
-dl.rating dd.rate05  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_05.png");}
-dl.rating dd.rate05p {background-image: url("https://ohayo-wine.github.io/blog/image/rating_05.png");}
-dl.rating dd.rate10m {background-image: url("https://ohayo-wine.github.io/blog/image/rating_10.png");}
-dl.rating dd.rate10  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_10.png");}
-dl.rating dd.rate10p {background-image: url("https://ohayo-wine.github.io/blog/image/rating_10.png");}
-dl.rating dd.rate15m {background-image: url("https://ohayo-wine.github.io/blog/image/rating_15.png");}
-dl.rating dd.rate15  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_15.png");}
-dl.rating dd.rate15p {background-image: url("https://ohayo-wine.github.io/blog/image/rating_15.png");}
-dl.rating dd.rate20m {background-image: url("https://ohayo-wine.github.io/blog/image/rating_20.png");}
-dl.rating dd.rate20  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_20.png");}
-dl.rating dd.rate20p {background-image: url("https://ohayo-wine.github.io/blog/image/rating_20.png");}
-dl.rating dd.rate25m {background-image: url("https://ohayo-wine.github.io/blog/image/rating_25.png");}
-dl.rating dd.rate25  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_25.png");}
-dl.rating dd.rate25p {background-image: url("https://ohayo-wine.github.io/blog/image/rating_25.png");}
-dl.rating dd.rate30m {background-image: url("https://ohayo-wine.github.io/blog/image/rating_30.png");}
-dl.rating dd.rate30  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_30.png");}
-dl.rating dd.rate30p {background-image: url("https://ohayo-wine.github.io/blog/image/rating_30.png");}
-dl.rating dd.rate35m {background-image: url("https://ohayo-wine.github.io/blog/image/rating_35.png");}
-dl.rating dd.rate35  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_35.png");}
-dl.rating dd.rate35p {background-image: url("https://ohayo-wine.github.io/blog/image/rating_35.png");}
-dl.rating dd.rate40m {background-image: url("https://ohayo-wine.github.io/blog/image/rating_40.png");}
-dl.rating dd.rate40  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_40.png");}
-dl.rating dd.rate40p {background-image: url("https://ohayo-wine.github.io/blog/image/rating_40.png");}
-dl.rating dd.rate45m {background-image: url("https://ohayo-wine.github.io/blog/image/rating_45.png");}
-dl.rating dd.rate45  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_45.png");}
-dl.rating dd.rate45p {background-image: url("https://ohayo-wine.github.io/blog/image/rating_45.png");}
-dl.rating dd.rate50  {background-image: url("https://ohayo-wine.github.io/blog/image/rating_50.png");}
+dl.rating dd.rate00  {background-image: url("../image/rating_00.png");}
+dl.rating dd.rate00p {background-image: url("../image/rating_00.png");}
+dl.rating dd.rate05m {background-image: url("../image/rating_05.png");}
+dl.rating dd.rate05  {background-image: url("../image/rating_05.png");}
+dl.rating dd.rate05p {background-image: url("../image/rating_05.png");}
+dl.rating dd.rate10m {background-image: url("../image/rating_10.png");}
+dl.rating dd.rate10  {background-image: url("../image/rating_10.png");}
+dl.rating dd.rate10p {background-image: url("../image/rating_10.png");}
+dl.rating dd.rate15m {background-image: url("../image/rating_15.png");}
+dl.rating dd.rate15  {background-image: url("../image/rating_15.png");}
+dl.rating dd.rate15p {background-image: url("../image/rating_15.png");}
+dl.rating dd.rate20m {background-image: url("../image/rating_20.png");}
+dl.rating dd.rate20  {background-image: url("../image/rating_20.png");}
+dl.rating dd.rate20p {background-image: url("../image/rating_20.png");}
+dl.rating dd.rate25m {background-image: url("../image/rating_25.png");}
+dl.rating dd.rate25  {background-image: url("../image/rating_25.png");}
+dl.rating dd.rate25p {background-image: url("../image/rating_25.png");}
+dl.rating dd.rate30m {background-image: url("../image/rating_30.png");}
+dl.rating dd.rate30  {background-image: url("../image/rating_30.png");}
+dl.rating dd.rate30p {background-image: url("../image/rating_30.png");}
+dl.rating dd.rate35m {background-image: url("../image/rating_35.png");}
+dl.rating dd.rate35  {background-image: url("../image/rating_35.png");}
+dl.rating dd.rate35p {background-image: url("../image/rating_35.png");}
+dl.rating dd.rate40m {background-image: url("../image/rating_40.png");}
+dl.rating dd.rate40  {background-image: url("../image/rating_40.png");}
+dl.rating dd.rate40p {background-image: url("../image/rating_40.png");}
+dl.rating dd.rate45m {background-image: url("../image/rating_45.png");}
+dl.rating dd.rate45  {background-image: url("../image/rating_45.png");}
+dl.rating dd.rate45p {background-image: url("../image/rating_45.png");}
+dl.rating dd.rate50  {background-image: url("../image/rating_50.png");}
 
 
 /* 引用スタイル */
@@ -1922,22 +1932,22 @@ blockquote p {
 }
 
 .sharebtn.twitter {
-    background-image: url("https://ohayo-wine.github.io/blog/image/sns_icon_twitter.svg");
+    background-image: url("../image/sns_icon_twitter.svg");
     border-color: #008aff;
 }
 
 .sharebtn.facebook {
-    background-image: url("https://ohayo-wine.github.io/blog/image/sns_icon_facebook.svg");
+    background-image: url("../image/sns_icon_facebook.svg");
     border-color: #3b5a9a;
 }
 
 .sharebtn.gplus {
-    background-image: url("https://ohayo-wine.github.io/blog/image/sns_icon_gplus.svg");
+    background-image: url("../image/sns_icon_gplus.svg");
     border-color: #dc4e41;
 }
 
 .sharebtn.feedly {
-    background-image: url("https://ohayo-wine.github.io/blog/image/sns_icon_feedly.svg");
+    background-image: url("../image/sns_icon_feedly.svg");
     border-color: #40ae64;
 }
 
