@@ -19,7 +19,6 @@
 
 <b:skin><![CDATA[]]></b:skin>
 <link href='//ohayo-wine.github.io/blog/css/site.css' media='all' rel='stylesheet'/>
-<link href='//ohayo-wine.github.io/blog/css/twitterWidget.css' media='all' rel='stylesheet'/>
 <link href='//ohayo-wine.github.io/blog/css/jquery.magnific-popup.css' media='all' rel='stylesheet'/>
 <link href='//ohayo-wine.github.io/blog/css/jquery.powertip.css' media='all' rel='stylesheet'/>
 <link href='//ohayo-wine.github.io/blog/css/swiper.css' media='all' rel='stylesheet'/>
@@ -1497,7 +1496,25 @@ function createSummaryAndThumb(pID){
 </div>
 
 <div class='widget-areabwrap'>
-  <b:section class='footersec' id='footersec2' showaddelement='yes'/>
+  <b:section class='footersec' id='footersec2' showaddelement='yes'>
+    <b:widget id='HTML4' locked='false' title='Twitter' type='HTML'>
+      <b:widget-settings>
+        <b:widget-setting name='content'>&lt;a class=&quot;twitter-timeline&quot; data-lang=&quot;ja&quot; data-theme=&quot;light&quot; data-link-color=&quot;#E81C4F&quot; data-chrome=&quot;noheader&quot; href=&quot;https://twitter.com/ohayo_wine&quot;&gt;Tweets by ムゥ@ohayo_wine&lt;/a&gt;
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</b:widget-setting>
+      </b:widget-settings>
+      <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+    </b:widget>
+  </b:section>
 </div>
 
 </div><!-- .sidebar-inner -->
