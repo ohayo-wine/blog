@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.TweetAuthor-name {
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+
+.timeline-Widget timeline-Tweet-text {
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+.timeline-LoadMore-prompt,
+.timeline-LoadMore-prompt--edge,
+.timeline-ShowMoreButton--edge,
+.timeline-ShowMoreButton {
+    font-size: 1.0rem;
+    width: 13em;
+}
+
+.timeline-Footer {
+    padding: 1.0rem 1.5rem 1.0rem 1.5rem;
+}
