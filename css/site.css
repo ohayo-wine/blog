@@ -1608,10 +1608,22 @@ section {
     border-style: none none solid none;
 }
 
+section.article-wine,
+section.review-text
+{
+    border: 0 none;
+}
+
 p {
 /*    text-indent: 1em;*/
     margin: 0 0 0.7em 0;
     line-height: 1.4;
+}
+
+.sidebar-containerbwrap{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .article-wine img, 
