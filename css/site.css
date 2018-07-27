@@ -84,13 +84,15 @@ select,
 textarea,
 dl, dt, dd{
 /*	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;*/
-    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, sans-serif;
+/*    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, sans-serif;*/
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    font-weight: 500;
 }
 
 body {
     color: #333;
     font-size: 13px;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     line-height: 20px;
     line-height: 1.6;
     margin: 0;
@@ -1601,10 +1603,12 @@ main {
 }
 
 section {
-    margin-bottom: 2em;
+    padding: 1.5em 0 0.8em 0;
+    border: 1px solid #dbdada;
+    border-style: none none solid none;
 }
 
-p{
+p {
 /*    text-indent: 1em;*/
     margin: 0 0 0.7em 0;
     line-height: 1.4;
@@ -1639,21 +1643,22 @@ p{
 
 .review-data > dt{
     padding: 0 0.25em;
-    font-size: 20px;
-    font-size: 2.0rem;
+    font-size: 22px;
+    font-size: 2.2rem;
     border: 1px solid #b3b3b3;
     border-style: none none solid none;
     display: block;
     line-height: 1;
+    color: #af0000;
 }
 
 .review-data > dt > small{
     display: block;
-    font-size: 13px;
-    font-size: 1.3rem;
+    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.5;
-    margin-bottom: 6px;
-    color: #4d4d4d;
+    padding: 0.2rem 0 0.4rem 0.25rem;
+    color: #888888;
 }
 
 .review-data-detail{
@@ -1664,8 +1669,8 @@ p{
     margin: 1px 0 0 0 ;
     border: 1px dotted #ddd;
     border-style: none none dotted none;
-    font-size: 12px;
-    font-size: 1.2rem;
+    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 2;
 }
 
@@ -1714,6 +1719,10 @@ p{
     clear: both;
 }
 
+section.tasting-comment{
+    
+}
+
 .review-text p img{
     max-width: 300px;
     max-height: 300px;
@@ -1726,46 +1735,49 @@ p{
     opacity: 0.8;
 }
 
-dl.rating {
-/*	border: 1px solid #d9d9d9;*/
+.post strong{
+    background: linear-gradient(transparent 40%, #ffff66 40%);
+    font-weight: bold;
+}
 
+dl.rating {
     display: block;
     line-height: 3;
-    margin: 4px 0 6px 0;
-    margin: 0.4em 0 0.6rem 0;
+    margin: 0.4rem 0 1.6rem 0;
+    padding: 0;
     width: 100%;
+    font-size: 0;
+    line-height: 0;
+}
+
+dl.rating dt, dl.rating dd {
+    box-sizing: content-box;
+    display: inline-block;
+    height: 5rem;
+    line-height: 5rem;
+    text-indent: 0;
+    margin: 0;
 }
 
 dl.rating dt {
-    display: block;
-    float: left;
     background: #f2f2f2;
     border: 1px solid #d9d9d9;
-    font-weight: normal;
-    text-indent: 0;
-    width: 6em;
-    padding: 0 10px;
-    box-sizing: content-box;
-    height: 30px;
-    line-height: 30px;
-    margin: 3px 0 0 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    width: 7em;
+    padding: 0 0.8rem;
     text-align: center;
 }
 
 dl.rating dd {
-    box-sizing: content-box;
-    display: block;
-    margin: 0 0 0 5.75em;
-    padding: 0 0 0 160px;
+    margin: 0 0.5rem;
     background-position: left center;
     background-repeat: no-repeat;
-    font-size: 18px;
+    font-size: 24px;
+    font-size: 2.4rem;
     font-family: Verdana;
+    padding: 0 0 0 160px;
     text-align: left;
-    text-indent: 0;
-    line-height: 36px;
-    width: 157px;
-    height: 36px;
 }
 
 dl.rating dd:after{
@@ -2051,6 +2063,6 @@ h2 .slideshow {
 }
 
 dfn {
-    border: 1px dashed #000;
+    border: 1px dashed #8d8d8d;
     border-style: none none dashed none;
 }
